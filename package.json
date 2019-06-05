@@ -1,0 +1,28 @@
+{
+  "name": "amplify-next",
+  "version": "0.0.1",
+  "description": "amplify-next helps bootstrap an AWS AppSync + Next app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "keywords": [
+    "amplify",
+    "next"
+  ],
+  "author": "vishnu88sankaran@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.0.2",
+    "apollo-boost": "^0.1.16",
+    "graphql": "^14.3.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.6",
+    "react-dom": "^16.8.6"
+  }
+}
