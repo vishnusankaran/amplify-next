@@ -49,10 +49,11 @@ export default class Item extends React.Component {
     return (
       <Query query={GET_TOPIC} variables={{ id }}>
         {({
-          data: {
-            getMyCustomType: { title, comments }
-          }
+          data
         }) => {
+          if(data && data.getMyCustomType){
+          const {title, comments} = data && data.getMyCustomType;
+
           return (
             <React.Fragment>
               <h1>{title}</h1>
@@ -72,6 +73,8 @@ export default class Item extends React.Component {
               </Button>
             </React.Fragment>
           );
+        }
+        return(<div>Loading</div>)
         }}
       </Query>
     );

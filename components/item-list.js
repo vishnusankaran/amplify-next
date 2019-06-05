@@ -24,10 +24,10 @@ export default () => {
         `}
       >
         {({
-          data: {
-            listMyCustomTypes: { items }
-          }
+          data
         }) => {
+          if(data && data.listMyCustomTypes){
+            const {items} = data.listMyCustomTypes;
           return items.map(({ title, id }) => (
             <React.Fragment key={id}>
               <Card>
@@ -40,6 +40,8 @@ export default () => {
               <br />
             </React.Fragment>
           ));
+        }
+        return (<div>Loading...</div>)
         }}
       </Query>
     </React.Fragment>
