@@ -1,14 +1,8 @@
-import Login from "../components/login";
-
-class Index extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <h1>Login</h1>
-        <Login />
-      </React.Fragment>
-    );
-  }
-}
+const Index = () => (
+  <React.Fragment>
+    <h1>Welcome to Amplify+Next</h1>
+    <p>Please create pages in </p>
+  </React.Fragment>
+);
 
 export default Index;
