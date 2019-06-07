@@ -25,6 +25,7 @@ exports.cli = function(args) {
     );
     exec(`cp -r $(npm root -g)/amplify-next/lib ${process.cwd()}`);
     exec(`cp -r $(npm root -g)/amplify-next/pages ${process.cwd()}`);
+    exec(`cp -r $(npm root -g)/amplify-next/components ${process.cwd()}`);
   } else {
     echo(`Try running -
     
