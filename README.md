@@ -4,8 +4,10 @@ amplify-next helps bootstrap an AWS AppSync + Next app
 
 ## Initial Setup (Because the npm module is not published yet)
 
-`npm i`
-`npm link`
+```
+npm i
+npm link
+```
 
 ## Creating a new Project
 
