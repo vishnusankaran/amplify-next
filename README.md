@@ -22,3 +22,7 @@ Once, its done - add a script to the `package.json` as below:
 "start": "next start"
 "build": "next build"
 ```
+
+## Creating a new Project
+
+Update the api key and endpoint in `lib/config.js`
