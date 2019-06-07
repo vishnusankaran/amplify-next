@@ -21,7 +21,7 @@ exports.cli = function(args) {
 
   if (options.command === "init") {
     exec(
-      "npm i next react react-dom graphql react-apollo apollo-boost@0.1.16 isomorphic-unfetch --save"
+      "npm i next react react-dom graphql react-apollo apollo-boost@0.1.16 isomorphic-unfetch @material-ui/core --save"
     );
     exec(`cp -r $(npm root -g)/amplify-next/lib ${process.cwd()}`);
     exec(`cp -r $(npm root -g)/amplify-next/pages ${process.cwd()}`);
