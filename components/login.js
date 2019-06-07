@@ -7,7 +7,7 @@ class Login extends React.Component {
     super(props);
 
     this.state = {
-      input: null
+      input: ""
     };
   }
 
