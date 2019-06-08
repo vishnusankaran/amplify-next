@@ -26,3 +26,11 @@ Once, its done - add a script to the `package.json` as below:
 ## Creating a new Project
 
 Update the api key and endpoint in `lib/config.js`
+
+## Create React Components
+
+Start writing your react component inside `pages` folder.
+
+## Deployment
+
+Once you are done with writing code just do `now`. Your project will be live.
