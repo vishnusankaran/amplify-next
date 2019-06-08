@@ -21,16 +21,18 @@ exports.cli = function(args) {
 
   if (options.command === "init") {
     exec(
-      "npm i next react react-dom graphql react-apollo apollo-boost@0.1.16 isomorphic-unfetch @material-ui/core --save"
+      "npm i next react react-dom graphql react-apollo apollo-boost@0.1.16 isomorphic-unfetch --save"
     );
+    exec("npm install -g now");
     exec(`cp -r $(npm root -g)/amplify-next/lib ${process.cwd()}`);
     exec(`cp -r $(npm root -g)/amplify-next/pages ${process.cwd()}`);
-    exec(`cp -r $(npm root -g)/amplify-next/components ${process.cwd()}`);
+    exec(`cp -r $(npm root -g)/amplify-next/deployment-config/next.config.js ${process.cwd()}`);
+    exec(`cp -r $(npm root -g)/amplify-next/deployment-config/now.json ${process.cwd()}`);
   } else {
     echo(`Try running -
-    
+
     amplify-next init
-    
+
     `);
   }
 };
